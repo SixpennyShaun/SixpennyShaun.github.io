@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:lightblue;padding:15px;">
+  <h1>Bin Buddy</h1>
+  <h3>An Alexa skill for finding domestic waste collection dates in Dorset</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="main">
+    <h2>GENERAL INFORMATION</h2>
+    <p>This skill  works only for the Dorset local authority.</p>
+    <p>This skill requires permission to access your address. Your address is required to search the Dorset authority's public bin date service for finding bin collection dates. The skill cannot work without an address and postcode.</p>
+    <p>This skill is free to use. It is not provided by the Dorset authority and has been developed independently.</p>
+    <p>Should the authority alter it bin collection website this skill may not work.</p>
+  </div>
+  <div class="main">
+    <h2>PRIVACY NOTICE</h2>
+    <p>No data is not stored or retained by this skill whatsoever.</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Copyright Bin Buddy 2024</div>
+
+</body>
+</html>
+
